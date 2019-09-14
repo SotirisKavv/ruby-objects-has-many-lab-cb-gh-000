@@ -10,7 +10,7 @@ class Author
     posts =[]
     Post.all.each do |post|
       if post.author.name == self.name
-        post << post
+        posts << post
       end
     end
     posts
